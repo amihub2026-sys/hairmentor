@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#101010" />
+    <meta
+      name="description"
+      content="Hair Mentor Salon — crafted cuts, transformative colour and personal style for women and men."
+    />
+    <title>HAIR MENTOR — The Art of Hair</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" defer />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="topline">
+      <span>HAIR MENTOR / THE STYLE JOURNAL</span
+      ><span>UNISEX HAIR STUDIO · THE ART OF YOU</span>
+    </div>
+    <header id="header">
+      <a class="brand" href="#home" aria-label="Hair Mentor home"
+        >HAIR<span>MENTOR</span><small>SALON · EST. STYLE</small></a
+      >
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#about">Our story</a><a href="#services">Expertise</a
+        ><a href="#lookbook">The lookbook</a><a href="#experience">Experience</a
+        ><a href="#contact">Contact</a>
+      </nav>
+      <a class="header-book" href="#booking">Reserve a chair <span>↗</span></a
+      ><button
+        id="menuToggle"
+        class="menu-toggle"
+        aria-label="Open menu"
+        aria-expanded="false"
+      >
+        <span></span><span></span>
+      </button>
+    </header>
+    <div class="mobile-menu" id="mobileMenu" inert>
+      <p>THE HAIR MENTOR EDIT</p>
+      <a href="#home">Home</a><a href="#about">Our story</a
+      ><a href="#services">Expertise</a><a href="#lookbook">The lookbook</a
+      ><a href="#experience">Experience</a><a href="#booking">Book your visit</a
+      ><a href="#contact">Contact</a>
+    </div>
+    <main>
+      <section class="hero" id="home" aria-label="Featured salon looks">
+        <div class="slides" id="slides">
+          <div
+            class="slide active"
+            style="
+              --bg: url(&quot;https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=2200&q=85&quot;);
+            "
+          >
+            <div class="slide-shade"></div>
+            <div class="hero-copy">
+              <p class="eyebrow">001 / THE ART OF HAIR</p>
+              <h1>GOOD HAIR.<br /><em>GREAT ENERGY.</em></h1>
+              <p class="hero-sub">A new perspective on personal style.</p>
+              <a class="outline-cta" href="#services"
+                >Discover our craft <span>↗</span></a
+              >
+            </div>
+          </div>
+          <div
+            class="slide"
+            style="
+              --bg: url(&quot;https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=2200&q=85&quot;);
+            "
+          >
+            <div class="slide-shade"></div>
+            <div class="hero-copy">
+              <p class="eyebrow">002 / YOUR SIGNATURE LOOK</p>
+              <h1>EVERY STRAND.<br /><em>A STATEMENT.</em></h1>
+              <p class="hero-sub">
+                Beautiful hair is personal. We make it yours.
+              </p>
+              <a class="outline-cta" href="#lookbook"
+                >Explore the lookbook <span>↗</span></a
+              >
+            </div>
+          </div>
+          <div
+            class="slide"
+            style="
+              --bg: url(&quot;https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=2200&q=85&quot;);
+            "
+          >
+            <div class="slide-shade"></div>
+            <div class="hero-copy">
+              <p class="eyebrow">003 / THE PERFECT FINISH</p>
+              <h1>THE CUT.<br /><em>THE CONFIDENCE.</em></h1>
+              <p class="hero-sub">
+                Precision and individuality, in every detail.
+              </p>
+              <a class="outline-cta" href="#booking"
+                >Reserve your chair <span>↗</span></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="hero-bottom">
+          <span>UNISEX HAIR STUDIO / HAIR MENTOR</span>
+          <div class="slide-controls">
+            <button id="slidePrev" aria-label="Previous slide">←</button
+            ><span id="slideCount">01 / 03</span
+            ><button id="slideNext" aria-label="Next slide">→</button>
+          </div>
+          <span class="scroll-note">SCROLL TO EXPLORE ↓</span>
+        </div>
+        <div class="hero-progress"><span id="heroProgress"></span></div>
+      </section>
+      <section class="intro wrap reveal" id="about">
+        <div class="index-text">[ THE HAIR MENTOR PHILOSOPHY ]</div>
+        <div>
+          <h2>NOT JUST A HAIRCUT.<br /><em>A WAY TO FEEL.</em></h2>
+          <div class="intro-foot">
+            <p>
+              We believe exceptional hair starts with listening. From
+              understated classics to fearless transformations, each look is an
+              expression of the person wearing it.
+            </p>
+            <a href="#booking" class="text-link"
+              >THE EXPERIENCE <span>↗</span></a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="duo" aria-label="Styling for all">
+        <a href="#services" class="duo-card reveal" data-select="men"
+          ><img
+            loading="lazy"
+            src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=1200&q=85"
+            alt="Man with styled hair"
+          />
+          <div class="duo-overlay">
+            <span>01 / THE GENTLEMEN'S EDIT</span>
+            <h3>FOR HIM.</h3>
+            <b>EXPLORE MEN'S SERVICES ↗</b>
+          </div></a
+        ><a href="#services" class="duo-card reveal" data-select="women"
+          ><img
+            loading="lazy"
+            src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1200&q=85"
+            alt="Woman with editorial hairstyle"
+          />
+          <div class="duo-overlay">
+            <span>02 / THE WOMEN'S EDIT</span>
+            <h3>FOR HER.</h3>
+            <b>EXPLORE WOMEN'S SERVICES ↗</b>
+          </div></a
+        >
+      </section>
+      <section class="services wrap" id="services">
+        <div class="section-heading reveal">
+          <span class="index-text">[ 01 / OUR EXPERTISE ]</span>
+          <h2>THE ART OF <em>DETAIL.</em></h2>
+          <p>Exceptional technique. Effortlessly individual results.</p>
+        </div>
+        <div class="service-stage">
+          <div class="service-list" role="tablist" aria-label="Hair services">
+            <button
+              class="service-item active"
+              role="tab"
+              aria-selected="true"
+              data-service="0"
+            >
+              <span>01</span><strong>THE PERFECT CUT</strong
+              ><span>↗</span></button
+            ><button
+              class="service-item"
+              role="tab"
+              aria-selected="false"
+              data-service="1"
+            >
+              <span>02</span><strong>COLOUR & DIMENSION</strong
+              ><span>↗</span></button
+            ><button
+              class="service-item"
+              role="tab"
+              aria-selected="false"
+              data-service="2"
+            >
+              <span>03</span><strong>HAIR RITUALS</strong><span>↗</span></button
+            ><button
+              class="service-item"
+              role="tab"
+              aria-selected="false"
+              data-service="3"
+            >
+              <span>04</span><strong>MEN'S GROOMING</strong
+              ><span>↗</span></button
+            ><button
+              class="service-item"
+              role="tab"
+              aria-selected="false"
+              data-service="4"
+            >
+              <span>05</span><strong>OCCASION STYLING</strong><span>↗</span>
+            </button>
+          </div>
+          <div class="service-display" id="servicePanel">
+            <img
+              id="serviceImage"
+              loading="lazy"
+              src="https://images.unsplash.com/photo-1560869713-7d0a29430803?auto=format&fit=crop&w=1400&q=85"
+              alt="Professional hair styling"
+            />
+            <div class="service-info">
+              <span id="serviceTag">CUT / STYLE / FINISH</span>
+              <p id="serviceDesc">
+                Personalised cuts, shape and movement designed around the way
+                you live.
+              </p>
+              <a href="#booking">BOOK A CONSULTATION ↗</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="marquee" aria-hidden="true">
+        <div>
+          THE ART OF HAIR ✳ YOUR STYLE, REIMAGINED ✳ THE ART OF HAIR ✳ YOUR
+          STYLE, REIMAGINED ✳
+        </div>
+      </div>
+      <section class="lookbook" id="lookbook">
+        <div class="lookbook-head wrap reveal">
+          <div>
+            <span class="index-text">[ 02 / THE MOVING LOOKBOOK ]</span>
+            <h2>FACES. HAIR.<br /><em>PERSONALITY.</em></h2>
+          </div>
+          <p>
+            Not just a gallery. A living style journal. Select any frame to take
+            a closer look.
+          </p>
+        </div>
+        <div class="reels" id="reels">
+          <div class="reel" id="reelOne"></div>
+          <div class="reel reverse" id="reelTwo"></div>
+        </div>
+        <div class="lookbook-foot wrap">
+          <span>THE HAIR MENTOR VISUAL EDIT</span
+          ><button id="pauseReels" aria-pressed="false">PAUSE MOTION Ⅱ</button
+          ><span>PORTRAITS / STYLE / EXPRESSION</span>
+        </div>
+      </section>
+      <section class="experience" id="experience">
+        <div class="experience-image">
+          <img
+            loading="lazy"
+            src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1600&q=85"
+            alt="Elegant hair salon interior"
+          />
+        </div>
+        <div class="experience-copy reveal">
+          <span class="index-text">[ 03 / BEYOND THE MIRROR ]</span>
+          <h2>A SPACE<br />TO <em>RESET.</em></h2>
+          <p>
+            It's the little things. The attention, the atmosphere, the feeling
+            of leaving more yourself than when you arrived.
+          </p>
+          <a class="light-cta" href="#booking">STEP INSIDE ↗</a>
+        </div>
+      </section>
+      <section class="manifesto wrap reveal">
+        <p>[ THE HAIR MENTOR PROMISE ]</p>
+        <h2>
+          YOUR HAIR<br />IS <em>YOUR STORY.</em><br />LET'S MAKE IT<br />UNFORGETTABLE.
+        </h2>
+        <a class="dark-cta" href="#booking"
+          >MAKE AN APPOINTMENT <span>↗</span></a
+        >
+      </section>
+      <section class="booking" id="booking">
+        <div class="booking-photo">
+          <img
+            loading="lazy"
+            src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=1400&q=85"
+            alt="Stylist creating an elegant hairstyle"
+          />
+        </div>
+        <div class="booking-content">
+          <span class="index-text">[ 04 / THE NEXT CHAPTER ]</span>
+          <h2>YOUR NEXT LOOK<br /><em>STARTS HERE.</em></h2>
+          <p>
+            Tell us a little about your ideal appointment. Copy your enquiry to
+            share through your preferred contact channel.
+          </p>
+          <form id="bookingForm">
+            <label
+              >Your name<input
+                required
+                name="name"
+                placeholder="Full name"
+                autocomplete="name" /></label
+            ><label
+              >Phone number<input
+                required
+                name="phone"
+                placeholder="Contact number"
+                type="tel"
+                autocomplete="tel" /></label
+            ><label
+              >Choose a service<select name="service" required>
+                <option value="">Select a service</option>
+                <option>Haircut & Styling</option>
+                <option>Colour & Highlights</option>
+                <option>Hair Spa & Treatment</option>
+                <option>Men's Grooming</option>
+                <option>Occasion Styling</option>
+              </select></label
+            ><label
+              >Preferred date<input
+                name="date"
+                id="appointmentDate"
+                type="date"
+                required /></label
+            ><label
+              >Preferred time<select name="time" required>
+                <option value="">Select preferred time</option>
+                <option>Morning</option>
+                <option>Afternoon</option>
+                <option>Evening</option>
+              </select></label
+            ><button type="submit" class="book-submit">
+              PREPARE MY ENQUIRY ↗
+            </button>
+            <p class="form-status" id="formStatus" role="status"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer id="contact">
+      <div class="footer-top wrap">
+        <div>
+          <span class="index-text">[ LET'S MAKE SOMETHING ICONIC ]</span>
+          <h2>BE YOUR<br /><em>OWN ICON.</em></h2>
+          <a href="#booking" class="footer-big-link"
+            >RESERVE YOUR CHAIR <span>↗</span></a
+          >
+        </div>
+        <div class="footer-columns">
+          <div>
+            <h3>EXPLORE</h3>
+            <a href="#about">Our story</a><a href="#services">Expertise</a
+            ><a href="#lookbook">Lookbook</a
+            ><a href="#experience">Experience</a>
+          </div>
+          <div>
+            <h3>CONNECT</h3>
+            <p>Contact details and social links can be added before launch.</p>
+            <a href="#booking">Appointment enquiry ↗</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-brand wrap">HAIR MENTOR<span>®</span></div>
+      <div class="footer-bottom wrap">
+        <span>© <span id="year"></span> HAIR MENTOR SALON</span
+        ><span>THE ART OF BEING YOU</span><a href="#home">BACK TO TOP ↑</a>
+      </div>
+    </footer>
+    <dialog id="lightbox">
+      <button
+        class="lightbox-close"
+        id="closeLightbox"
+        aria-label="Close image"
+      >
+        ✕</button
+      ><button
+        id="lightPrev"
+        class="light-arrow left"
+        aria-label="Previous image"
+      >
+        ←</button
+      ><img id="lightImage" alt="Hairstyle gallery image" /><button
+        id="lightNext"
+        class="light-arrow right"
+        aria-label="Next image"
+      >
+        →</button
+      ><span id="lightCaption"></span>
+    </dialog>
+    <div class="toast" id="toast" role="status"></div>
+  </body>
+</html>
