@@ -238,7 +238,6 @@ if (reduceMotion) {
   pauseBtn.textContent = "RESUME MOTION ▶";
 }
 $("#year").textContent = new Date().getFullYear();
-$("#appointmentDate").min = new Date().toLocaleDateString("en-CA");
 let toastTimer;
 function toast(message) {
   const el = $("#toast");
@@ -247,19 +246,3 @@ function toast(message) {
   clearTimeout(toastTimer);
   toastTimer = setTimeout(() => el.classList.remove("show"), 3500);
 }
-$("#bookingForm").addEventListener("submit", async (e) => {
-  e.preventDefault();
-  const fd = new FormData(e.currentTarget);
-  const msg = `Hello Hair Mentor Salon, I'd like to enquire about an appointment.\nName: ${fd.get("name")}\nPhone: ${fd.get("phone")}\nService: ${fd.get("service")}\nPreferred date: ${fd.get("date")}\nPreferred time: ${fd.get("time")}\nPlease confirm available slots.`;
-  try {
-    await navigator.clipboard.writeText(msg);
-    $("#formStatus").textContent =
-      "Your enquiry has been copied. Paste it into WhatsApp or a message to the salon. This is not a confirmed booking.";
-    toast("Appointment enquiry copied");
-  } catch {
-    const box = $("#formStatus");
-    box.textContent = msg;
-    box.style.whiteSpace = "pre-line";
-    toast("Copy the enquiry shown below");
-  }
-});
